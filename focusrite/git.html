@@ -1,0 +1,247 @@
+<pre><font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ git --version
+git version 2.37.2
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ git config --global user.name &quot;mniamusnik&quot;
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ git config --global user.email &quot;mniamusnik@email.com&quot;
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ ls
+ <font color="#12488B"><b>Desktop</b></font>     <font color="#12488B"><b>Music</b></font>      <font color="#12488B"><b>PycharmProjects</b></font>   <font color="#12488B"><b>Videos</b></font>
+ <font color="#12488B"><b>Documents</b></font>   <font color="#12488B"><b>Pictures</b></font>   <font color="#12488B"><b>snap</b></font>             <font color="#12488B"><b>&apos;VirtualBox VMs&apos;</b></font>
+ <font color="#12488B"><b>Downloads</b></font>   <font color="#12488B"><b>Public</b></font>     <font color="#12488B"><b>Templates</b></font>
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ mkdir GitTutorial
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ cd
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ ls
+ <font color="#12488B"><b>Desktop</b></font>     <font color="#12488B"><b>GitTutorial</b></font>   <font color="#12488B"><b>Public</b></font>            <font color="#12488B"><b>Templates</b></font>
+ <font color="#12488B"><b>Documents</b></font>   <font color="#12488B"><b>Music</b></font>         <font color="#12488B"><b>PycharmProjects</b></font>   <font color="#12488B"><b>Videos</b></font>
+ <font color="#12488B"><b>Downloads</b></font>   <font color="#12488B"><b>Pictures</b></font>      <font color="#12488B"><b>snap</b></font>             <font color="#12488B"><b>&apos;VirtualBox VMs&apos;</b></font>
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~</b></font>$ cd GitTutorial
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git init
+<font color="#A2734C">hint: Using &apos;master&apos; as the name for the initial branch. This default branch name</font>
+<font color="#A2734C">hint: is subject to change. To configure the initial branch name to use in all</font>
+<font color="#A2734C">hint: of your new repositories, which will suppress this warning, call:</font>
+<font color="#A2734C">hint: </font>
+<font color="#A2734C">hint: </font>	<font color="#A2734C">git config --global init.defaultBranch &lt;name&gt;</font>
+<font color="#A2734C">hint: </font>
+<font color="#A2734C">hint: Names commonly chosen instead of &apos;master&apos; are &apos;main&apos;, &apos;trunk&apos; and</font>
+<font color="#A2734C">hint: &apos;development&apos;. The just-created branch can be renamed via this command:</font>
+<font color="#A2734C">hint: </font>
+<font color="#A2734C">hint: </font>	<font color="#A2734C">git branch -m &lt;name&gt;</font>
+Initialised empty Git repository in /home/kleszczyca/GitTutorial/.git/
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ ls -a
+<font color="#12488B"><b>.</b></font>  <font color="#12488B"><b>..</b></font>  <font color="#12488B"><b>.git</b></font>
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use &quot;git add&quot; to track)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ touch index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#C01C28">index.html</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git add index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)
+	<font color="#26A269">new file:   index.html</font>
+
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git commit -m &quot;Commit Message:31/08/2022:: Create  index.html&quot;
+[master (root-commit) 90032e3] Commit Message:31/08/2022:: Create  index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+nothing to commit, working tree clean
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git log
+<font color="#A2734C">commit 90032e3d6aca0371b1aea711782b94f5c369b72c (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:18:11 2022 +0100
+
+    Commit Message:31/08/2022:: Create  index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ touch style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ touch script.js
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ ls
+index.html  script.js  style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ cat&gt;index.html
+&lt;html&gt;&lt;head&gt;&lt;title&gt;Scammer Hunter&lt;/title&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;Malcolm Merlyn&lt;/h1&gt;&lt;p&gt;Scammer PANICS After I Show Him His Name &amp; Pictures!&lt;/p&gt; &lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://youtube.be/qMT_-cVKuAM&quot; &lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt;
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ ls
+index.html  script.js  style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ vim index.html
+
+[1]+  Stopped                 vim index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	<font color="#C01C28">modified:   index.html</font>
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#C01C28">.index.html.swp</font>
+	<font color="#C01C28">script.js</font>
+	<font color="#C01C28">style.css</font>
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git add index.html script.js style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git commit -m &quot;Commit message: 31/08/2022:: adding some logic webpage&quot;
+[master 325e383] Commit message: 31/08/2022:: adding some logic webpage
+ 3 files changed, 1 insertion(+)
+ create mode 100644 script.js
+ create mode 100644 style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git log
+<font color="#A2734C">commit 325e38380f34333c4f4c1174c684afae0ae44a7c (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:39:16 2022 +0100
+
+    Commit message: 31/08/2022:: adding some logic webpage
+
+<font color="#A2734C">commit 90032e3d6aca0371b1aea711782b94f5c369b72c</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:18:11 2022 +0100
+
+    Commit Message:31/08/2022:: Create  index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+	<font color="#C01C28">.index.html.swp</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ rm .index.html.swp
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ ls
+index.html  script.js  style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+nothing to commit, working tree clean
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git log
+<font color="#A2734C">commit 325e38380f34333c4f4c1174c684afae0ae44a7c (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:39:16 2022 +0100
+
+    Commit message: 31/08/2022:: adding some logic webpage
+
+<font color="#A2734C">commit 90032e3d6aca0371b1aea711782b94f5c369b72c</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:18:11 2022 +0100
+
+    Commit Message:31/08/2022:: Create  index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git checkout 90032e3d6aca0371b1aea711782b94f5c369b72c
+Note: switching to &apos;90032e3d6aca0371b1aea711782b94f5c369b72c&apos;.
+
+You are in &apos;detached HEAD&apos; state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c &lt;new-branch-name&gt;
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 90032e3 Commit Message:31/08/2022:: Create  index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+<font color="#C01C28">HEAD detached at </font>90032e3
+nothing to commit, working tree clean
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git branch 
+* <font color="#26A269">(HEAD detached at 90032e3)</font>
+  master
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git checkout master
+Previous HEAD position was 90032e3 Commit Message:31/08/2022:: Create  index.html
+Switched to branch &apos;master&apos;
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch master
+nothing to commit, working tree clean
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git branch soundFunction
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git branch 
+* <font color="#26A269">master</font>
+  soundFunction
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git checkout soundFunction
+Switched to branch &apos;soundFunction&apos;
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git log
+<font color="#A2734C">commit 325e38380f34333c4f4c1174c684afae0ae44a7c (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>soundFunction</b></font><font color="#A2734C">, </font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:39:16 2022 +0100
+
+    Commit message: 31/08/2022:: adding some logic webpage
+
+<font color="#A2734C">commit 90032e3d6aca0371b1aea711782b94f5c369b72c</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:18:11 2022 +0100
+
+    Commit Message:31/08/2022:: Create  index.html
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ ls
+index.html  script.js  style.css
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ cat&gt;style.css
+body { background-color: powderblue;}
+h1 {color: blue}    
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch soundFunction
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	<font color="#C01C28">modified:   style.css</font>
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git add .
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git commit -m &quot;add backgroundcoloor&quot;
+[soundFunction bce5281] add backgroundcoloor
+ 1 file changed, 2 insertions(+)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ cat&gt;&gt;style.css
+
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git status
+On branch soundFunction
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+	<font color="#C01C28">modified:   style.css</font>
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git add .
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git commit -m &quot;fat fingers # colour&quot; 
+[soundFunction da8f660] fat fingers # colour
+ 1 file changed, 1 insertion(+)
+<font color="#26A269"><b>JustALinuxNot-MacBook-</b></font>:<font color="#12488B"><b>~/GitTutorial</b></font>$ git log
+<font color="#A2734C">commit da8f66010c5263aa53637715cf01a5f93e1ae612 (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>soundFunction</b></font><font color="#A2734C">)</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:55:07 2022 +0100
+
+    fat fingers # colour
+
+<font color="#A2734C">commit bce5281aa82e51e0b002e4fb45b6f29046d31210</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:52:01 2022 +0100
+
+    add backgroundcoloor
+
+<font color="#A2734C">commit 325e38380f34333c4f4c1174c684afae0ae44a7c (</font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:39:16 2022 +0100
+
+    Commit message: 31/08/2022:: adding some logic webpage
+
+<font color="#A2734C">commit 90032e3d6aca0371b1aea711782b94f5c369b72c</font>
+Author: mniamusnik &lt;mniamusnik@email.com&gt;
+Date:   Wed Aug 31 08:18:11 2022 +0100
+
+    Commit Message:31/08/2022:: Create  index.html
+<span style="background-color:#FFFFFF"><font color="#300A24">(END)</font></span>
+
+
+
+
+

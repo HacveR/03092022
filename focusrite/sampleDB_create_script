@@ -1,0 +1,57 @@
+=============================================================================
+
+=============================================================================
+
+// Because this db is for  testing purpose and  size will be not significant  i will use utf8
+CREATE SCHEMA `focusrite` DEFAULT CHARACTER SET utf8 ;
+
+
+
+CREATE TABLE employees (
+    emp_no      INT             NOT NULL,  -- UNSIGNED AUTO_INCREMENT??
+    first_name  VARCHAR(55)     NOT NULL,
+    last_name   VARCHAR(55)     NOT NULL,
+    hire_date   DATE            NOT NULL,
+    PRIMARY KEY AUTOINCREMENT (emp_no)                   -- Index built automatically on primary-key column
+                                           -- INDEX (first_name)
+                                           -- INDEX (last_name)
+);
+
+=============================================================================
+
+=============================================================================
+
+
+INSERT INTO `focusrite`.`employees`
+(`emp_no`,
+`first_name`,
+`last_name`,
+`hire_date`)
+VALUES
+(<{emp_no: }>,
+<{first_name: }>,
+<{last_name: }>,
+<{hire_date: }>);
+
+
+
+
+UPDATE `focusrite`.`employees`
+SET
+`emp_no` = <{emp_no: }>,
+`first_name` = <{first_name: }>,
+`last_name` = <{last_name: }>,
+`hire_date` = <{hire_date: }>
+WHERE `emp_no` = <{expr}>;
+
+
+
+SELECT `employees`.`emp_no`,
+    `employees`.`first_name`,
+    `employees`.`last_name`,
+    `employees`.`hire_date`
+FROM `focusrite`.`employees`;
+
+
+
+
